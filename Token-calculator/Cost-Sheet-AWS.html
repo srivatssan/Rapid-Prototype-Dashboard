@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Tables</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 0;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto 20px;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    table thead {
+      background-color: #007BFF;
+      color: #fff;
+    }
+    table th, table td {
+      padding: 12px 15px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anthropic Models Pricing</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Anthropic Models</th>
+        <th>Price per 1,000 input tokens</th>
+        <th>Price per 1,000 output tokens</th>
+        <th>Price per 1,000 input tokens (batch)</th>
+        <th>Price per 1,000 output tokens (batch)</th>
+        <th>Price per 1,000 input tokens (cache write)</th>
+        <th>Price per 1,000 input tokens (cache read)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Claude 3.5 Sonnet**</td>
+        <td>$0.003</td>
+        <td>$0.015</td>
+        <td>$0.0015</td>
+        <td>$0.0075</td>
+        <td>$0.00375</td>
+        <td>$0.0003</td>
+      </tr>
+      <tr>
+        <td>Claude 3.5 Haiku</td>
+        <td>$0.0008</td>
+        <td>$0.004</td>
+        <td>$0.0005</td>
+        <td>$0.0025</td>
+        <td>$0.001</td>
+        <td>$0.00008</td>
+      </tr>
+      <tr>
+        <td>Claude 3 Opus*</td>
+        <td>$0.015</td>
+        <td>$0.075</td>
+        <td>$0.0075</td>
+        <td>$0.0375</td>
+        <td>NA</td>
+        <td>NA</td>
+      </tr>
+      <tr>
+        <td>Claude 3 Haiku</td>
+        <td>$0.00025</td>
+        <td>$0.00125</td>
+        <td>$0.000125</td>
+        <td>$0.000625</td>
+        <td>NA</td>
+        <td>NA</td>
+      </tr>
+      <tr>
+        <td>Claude 3 Sonnet</td>
+        <td>$0.003</td>
+        <td>$0.015</td>
+        <td>$0.0015</td>
+        <td>$0.0075</td>
+        <td>NA</td>
+        <td>NA</td>
+      </tr>
+      <tr>
+        <td>Claude 2.1</td>
+        <td>$0.008</td>
+        <td>$0.024</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+      </tr>
+      <tr>
+        <td>Claude 2.0</td>
+        <td>$0.008</td>
+        <td>$0.024</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+      </tr>
+      <tr>
+        <td>Claude Instant</td>
+        <td>$0.0008</td>
+        <td>$0.0024</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>On-Demand and Batch Pricing for Text Models</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Amazon Titan Models</th>
+        <th>Price per 1,000 input tokens</th>
+        <th>Price per 1,000 output tokens</th>
+        <th>Price per 1,000 input tokens (batch)</th>
+        <th>Price per 1,000 output tokens (batch)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Amazon Titan Text Premier</td>
+        <td>$0.0005</td>
+        <td>$0.0015</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Amazon Titan Text Lite</td>
+        <td>$0.00015</td>
+        <td>$0.0002</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Amazon Titan Text Express</td>
+        <td>$0.0002</td>
+        <td>$0.0006</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Amazon Titan Text Embeddings</td>
+        <td>$0.0001</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Amazon Titan Text Embeddings V2</td>
+        <td>$0.00002</td>
+        <td>N/A</td>
+        <td>$0.00001</td>
+        <td>N/A</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

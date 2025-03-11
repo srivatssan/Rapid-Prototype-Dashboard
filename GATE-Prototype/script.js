@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Navigation Buttons
 document.getElementById("submitBtn")?.addEventListener("click", function() {
-    window.location.href = "review.html";
+    window.location.href = "result_review.html";
 });
 
 document.getElementById("prevBtn")?.addEventListener("click", function() {

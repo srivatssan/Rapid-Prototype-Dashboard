@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Case Wireframe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h3 class="mb-3">Test Case Wireframe</h3>
+
+        <div class="mb-3">
+            <label for="testCaseName" class="form-label">Test Case Name</label>
+            <input type="text" class="form-control" id="testCaseName" placeholder="Enter test case name" data-bs-toggle="popover" data-bs-trigger="click" data-bs-content="Enter a valid and unique test case number">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Test Code For:</label>
+            <div>
+                <input type="radio" id="ui" name="testCodeFor" checked data-bs-toggle="popover" data-bs-trigger="click" data-bs-content="Choose the type of test case to be generated">
+                <label for="ui">UI</label>
+                <input type="radio" id="api" name="testCodeFor" data-bs-toggle="popover" data-bs-trigger="click" data-bs-content="Choose the type of test case to be generated">
+                <label for="api">API</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">GATE Base Page methods:</label>
+            <div>
+                <input type="checkbox" id="all"> <label for="all">All</label>
+                <input type="checkbox" id="y"> <label for="y">Y</label>
+                <input type="checkbox" id="z"> <label for="z">Z</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="domFile" class="form-label" id="domFileLabel">DOM File:</label>
+            <input type="file" class="form-control" id="domFile">
+        </div>
+
+        <div class="mb-3">
+            <label for="testCaseFile" class="form-label">Test Case:</label>
+            <input type="file" class="form-control" id="testCaseFile">
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-primary me-2" id="submitBtn">Submit</button>
+            <button class="btn btn-secondary" id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
